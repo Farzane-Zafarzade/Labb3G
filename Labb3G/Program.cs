@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Labb3G.MyGame;
-
-namespace Labb3G
+﻿namespace Labb3G
 {
-    class Program
+    using Labb3G.MyGame;
+
+    internal class Program
     {
-        
-        static void Main(string[] args)
+        //Creates a new Game
+        //Start it by calling startGame()
+        internal static void Main(string[] args)
         {
             Games newGame = new Games();
             newGame.startGame();
         }
-      
     }
 }

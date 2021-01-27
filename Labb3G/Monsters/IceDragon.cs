@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Labb3G.Monsters
+﻿namespace Labb3G.Monsters
 {
-    class IceDragon : Monster
+    using System;
+
+    internal class IceDragon : Monster
     {
         public IceDragon() // Constructor
         {
@@ -14,39 +12,41 @@ namespace Labb3G.Monsters
             base.AttackDmg = 10;
         }
 
-
-            public override int Attack() // runs to attack
+        // runs the attack
+        public override int Attack() 
         {
             Console.WriteLine("ice dragon attack!");
             return base.Attack();
         }
 
-        public override int GetExp() //Returns amont of monsters's Exp
+        //Returns amont of monsters's Exp
+        public override int GetExp() 
         {
             return base.GetExp();
         }
 
-        public override int GetHp() //Returns amont of monster's Hp
+        //Returns amont of monster's Hp
+        public override int GetHp() 
         {
             return base.GetHp();
         }
 
-        public override bool IsDead() // Checks if monster is dead
+        // Checks if monster is dead
+        public override bool IsDead() 
         {
             return base.IsDead();
         }
 
-        public override string GetName() //Returns monster's Name
+        //Returns monster's Name
+        public override string GetName() 
         {
             return base.GetName();
         }
 
-        public override void TakeDamage(int attack) // Calculates Hp after monster takes damage
+        // Calculates Hp after monster takes damage
+        public override void TakeDamage(int attack) 
         {
             base.TakeDamage(attack);
         }
-
-
     }
-   
 }
